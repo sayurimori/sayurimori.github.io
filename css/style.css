@@ -1,0 +1,187 @@
+@charset "utf-8";
+
+body{
+    font-size:14px;
+    background:#000000;
+}
+img{
+    vertical-align:bottom;
+}
+/* ヘッダー用の指定 */
+header{
+    position:fixed;
+    width:100%;
+    height:60px;
+    left:0;
+    top:0;
+    z-index:999;
+    background:#000000;
+    padding-bottom:20px;
+}
+header h1 a{
+    color:#e1c383;
+    text-decoration:none;
+}
+header h1 img{
+    display:inline-block;
+    height:50px;
+    margin:15px 0 0 0;
+}
+header span{
+    display:block;
+    margin:-45px 0 0 85px;
+    line-height:1.5;
+}
+#header_navigation{
+    position:absolute;
+    right:270px; top:33px;
+}
+#header_navigation,#header_navigation li{
+    display:inline-block;
+    margin:0 5px;
+}
+#header_navigation a{
+    color:#ffffff;
+}
+#header_navigation a:hover{
+    color:#e1c383;
+}
+#header_navigation i{
+    margin-right:5px;
+}
+#branding_slider{
+    margin-top:50px;
+}
+#branding_slider .image_div{
+    height:550px;
+    background-size:cover;
+}
+#branding_slider a{
+    display:block;
+    width:100%;
+    height:100%;
+}
+header .taiken_button{
+    position:absolute;
+    right:10px; top:28px;
+    display:block;
+    text-indent:-10000px;
+    margin-top:-20px;
+    width:251px; height:65px;
+    background:url(../image/header_counselingBtn_off.png) no-repeat center center;
+}
+header .taiken_button:hover{
+    background:url(../image/header_counselingBtn_on.png) no-repeat center center;
+}
+#TOKUCHO,#TAIKEN,#COURSE,#ACCESS{
+    margin-top:-80px;
+    padding-top:80px;
+}
+
+h2{
+    font-size: 2.4rem;
+    color: #daa520;
+    background:#fffff0;
+    text-align: center;
+    margin:10px;
+    padding:5px 0;
+}
+
+/* 特徴用の指定 */
+#TOKUCHO img{
+    width:900px;
+}
+#TOKUCHO div{
+    text-align: center;
+    padding: 25px 0;
+}
+      
+    
+/* 体験メニュー用の指定 */
+#TAIKEN h2 + div{
+    display:flex;
+    justify-content: center;
+}
+#TAIKEN div img{
+    width:450px;
+    border:5px solid #000000;
+}
+
+#TAIKEN dl{
+    color:#ffffff;
+    line-height:1.5;
+}
+#TAIKEN dt{
+    font-size: 1.6rem;
+    margin: 5px 0;
+}
+#TAIKEN dt::before{
+    content:"▽";
+    margin-right:5px;
+}
+#TAIKEN li{
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+}
+#TAIKEN li::before{
+    content:"・";
+}
+
+/* コース案内用の指定 */
+#COURSE div{
+    text-align: center;
+    padding: 25px 0;
+}
+
+/* アクセス用の指定 */
+#googlemap_area{
+    width:500px;
+}
+#ACCESS dl{
+    color:#ffffff;
+    display:inline-block;
+     line-height:1.5;
+}
+#ACCESS dt{
+    font-size: 1.6rem;
+    margin: 5px 0;
+}
+#ACCESS dt img{
+    width:100px;
+    margin-right: 10px;
+}
+
+#ACCESS_WRAP{
+    display:flex;
+    justify-content: center;
+    padding: 25px 0;
+}
+#access_data{
+    display:inline-block;
+    margin-left:20px;
+}
+#access_data li{
+    margin-bottom:10px;
+    font-size: 1.0rem;
+}
+#access_data li span{
+    padding-left:120px;
+}
+#access_data li:nth-child(1):before{
+    content:url("../image/access_address.png");
+}
+#access_data li:nth-child(2):before{
+    content:url("../image/access_item.png");
+}
+footer{
+    text-align: center;
+    border-top:3px solid #e1c383;
+    padding:35px;
+}
+footer img{
+    margin-bottom:10px;
+}
+footer small{
+    display:block;
+    color:#ffffff;
+}
